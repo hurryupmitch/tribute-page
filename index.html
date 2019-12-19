@@ -7,21 +7,33 @@
 
     <style>
       html {
-        font-family: sans-serif;
+        font-family:Arial, Helvetica, sans-serif
       }
       h1 {
         text-align: center;
       }
-      .img-div {
-        max-width: 100%;
-        height: auto;
-        justify-items: center;
+      .ghost-button {
+        display: inline-block;
+        width: 200px;
+        padding: 8px;
+        color: black;
+        border: 1px solid black;
+        text-align: center;
+        outline: none;
+        text-decoration: none;
       }
-      .center {
-        margin: auto;
-        width: 50%;
-        border: 3px solid black;
-        padding: 10px;
+      .ghost-button:hover {
+        box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+      }
+      body {
+        background-color: lightgray;
+      }
+      .header {
+        padding: 60px;
+        text-align: center;
+        background: black;
+        color: white;
+        font-size: 30px;
       }
       .row {
         display: flex;
@@ -36,42 +48,105 @@
           flex: 1;
           }
       }
+      img {
+        border-radius: 50px;
+        box-shadow: 10px 10px 8px #888888;
+      }
+      @media screen and (max-width: 1000px) {
+        img {
+         max-width: 70%;
+         max-height: 70%;
+         text-align: center;
+         }
+      }
+      .align {
+        text-align: center;
+        }
+      @media screen and (min-width: 700px) {
+      ._25 {
+        flex: 2.5;
+        }
+      ._65 {
+        flex: 6.5;
+        margin-right: 25px;
+        margin-left: 10px;
+        }
+      ._20 {
+        flex: 2;
+        }
+      }
+      .container {
+        max-width : 1200px;
+        margin: 0 auto;
+      }     
+      iframe {
+        max-width: 100%;
+        box-shadow: 10px 10px 8px #888888;
+      }
     </style>
   </head>
-
-  <body class="center">
-    <div class="row">
-      <div class="column">
-        <h1>This is not the greatest man in the world. This is only a tribute.</h1>
-      </div>
-    </div>
-      <div class="row">
-        <div class="column">DOOT</div>
-        <div class="column">
-        <img src="trumpet.png" alt="trumpet" height="42" width="42">
-        </div>
-        <div class="column">DOOT</div>
-        <div class="column">
-        <img src="trumpet.png" alt="trumpet" height="42" width="42">
-        </div>
-        <div class="column">DOOT</div>
-        <div class="column">
-        <img src="trumpet.png" alt="trumpet" height="42" width="42">
-        </div>
-      </div>
-        <div class="row">
-          <div class="column">
-            <p>This is the most interesting and influential man that has ever walked the earth. Here are some facts about John Cena:</p>
+  <div class="container">
+    <h1>This is not the greatest man in the world. This is only a tribute.</h1>
+  </div>
+  <div id="title" class="header">
+    <h1>JOHN CENA</h1>
+    <p>__________</p>
+  </div>
+  <div class="row">
+    <a id="tribute-link" class="column align ghost-button" href="https://www.instagram.com/johncena/" target="_blank">Instagram</a>
+    <a id="tribute-link" class="column align ghost-button" href="https://www.imdb.com/name/nm1078479/" target="_blank">IMDB</a>
+    <a id="tribute-link" class="column align ghost-button" href="https://en.wikipedia.org/wiki/John_Cena" target="_blank">Wikipedia</a>
+    <a id="tribute-link" class="column align ghost-button" href="https://twitter.com/JohnCena" target="_blank">Twitter</a>
+    <a id="tribute-link" class="column align ghost-button" href="https://www.wwe.com/superstars/john-cena" target="_blank">WWE</a>
+    <a id="tribute-link" class="column align ghost-button" href="https://open.spotify.com/artist/0CV4DAO1wV3ikZGYIkMtmh" target="_blank">Spotify</a>
+  </div>
+  <body class="container">
+    <div id="main">
+        <div id="tribute-info" class="row">
+          <div class="column _65">
+            <h2>Wrestler, actor, philanthropist.</h2>
+            <p><strong>Pro wrestlers have a habit of disappointing you.</strong> On one hand, they are essentially the closest we have to real life super heroes - larger than life characters that perform impossible feats. Yet in actuality, they are fallible, mortal human beings, who destroy their bodies for entertainment, and die young. They get arrested for domestic violence or caught using the N-word, or are charged over the death of their lover.</p>
+            <p>Thank god, then, for John Cena.</p>
+            <p>If, for some reason, you don't follow the wonderful world of sports entertainment, John Cena is basically wrestling’s biggest superstar since Hulk Hogan. From winning his first WWE title in 2004, he’s been a permanent fixture at the top of the card ever since.  He’s been so big for so long that the fans eventually turned on him for being too dominant – and then a few years later there was a backlash to the backlash, and now Cena is heralded as an elder statesman of the business. He’s treated like the Dallas Cowboys or the New York Yankees - love him or hate him, everyone has an opinion.</p>
+            <p>But this isn’t about the character John Cena plays on television.</p>
+            <p>John Cena has managed to break out of the WWE niche in a very particular way that I’d argue that no wrestler has before. Initially, it seemed to stem from a prank call on Virginia radio station WNVZ, where the host of the Z Morning Zoo show constantly kept interrupting a listener’s wrestling-hating wife with Cena’s entrance music. The recording went viral, and spawned a series of Vines and YouTube videos of John Cena interrupting everything from Spongebob Squarepants to Star Wars.</p>
+            <p>This soon cycled into Cena becoming a full-on human meme. You can’t tweet a photo of him without a thousand replies claiming that there’s no one in the image, in reference to his “You can’t see me!” catchphrase. Photoshops and jokes about Cena now flood the internet. And the reason why it all works is just because the real life John Cena is such a loveable man. He loves cartoons. He embraces the memes. Hell, he even acts them out IRL. He speaks Mandarin. He presents the Nickelodeon Kids Choice Awards and doesn’t mind getting slimed.</p>
+            <p>This is all important, because on first glance, looking at him, you’d think he would be a massive jock - the sort of guy who would stuff nerds in lockers, thinks political correctness has gone too far, and asks when International Men’s Day is. Unequivocally not true.</p>
+            <p>John Cena is the antithesis of this.</p>
+            <p>He’s the destroyer of the myth of toxic masculinity we need. Instead of being a bad father like Ric Flair, for instance, he’s breaking the record for visiting the most terminally-ill kids on behalf of the Make-A-Wish foundation. (Current count is 600 Make-a-Wishes granted!) In 2016, Cena released a WWE promo video where he teaches that true American patriotism is fighting racism and embracing LGBT rights. Not a single other professional wrestling superstar has ever done such a thing, and really, name another celebrity so candidly and eloquently explaining this.</p>
+            <p>His film career is also starting to explode – after a string of relatively unsuccessful mid-budget action movies in the late 2000s, he’s found his niche in Apatow-style comedies and even some new footing in action films. You can find him comedy Blockers, brand new comedy Playing With Fire, in the Transformers spin-off Bumblebee, and soon to be starring in another Fast & Furious movie. It’s taken a bit of time for real John Cena to become a truly mainstream celebrity. But thank god it has happened.<p>
           </div>
-        <div class="img-div">
-          <div class="column">
-        <img src="john.jpg" alt="john cena">
+        <div class="column _25">
+        <p><strong>JOHN CENA FAST FACTS</strong></p>
+        <p>Born: April 23, 1977</p>
+        <p>Residence: Land O’ Lakes, Florida</p>
+        <p>Occupation: Pro Wrestler, Actor, Rapper</p>
+        <p>Years active: 1999-present</p>
+        <p>Height: 6’1’’</p>
+        <p>Weight: 251lbs</p>
+        <p>Album Status: Certified Platnum</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0MdK8hBkR3s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
       </div>
     </div>
+    </div>
+    <div id="img-div">
+    <div class="row">
+    <img id="image" class ="column align" src="https://www.wwe.com/f/styles/wwe_large/public/all/2019/10/RAW_06202016rf_1606--3d3997f53e6f3e9277cd5a67fbd8f31f.jpg" alt="john cena"></img>
+    </div>
+    <h2 id="img-caption">John Cena, American Hero.</h2>
+    </div>
+    <div class="row">
+    <a id="tribute-link" class="column align ghost-button" href="https://www.instagram.com/johncena/" target="_blank">Instagram</a>
+    <a id="tribute-link" class="column align ghost-button" href="https://www.imdb.com/name/nm1078479/" target="_blank">IMDB</a>
+    <a id="tribute-link" class="column align ghost-button" href="https://en.wikipedia.org/wiki/John_Cena" target="_blank">Wikipedia</a>
+    <a id="tribute-link" class="column align ghost-button" href="https://twitter.com/JohnCena" target="_blank">Twitter</a>
+    <a id="tribute-link" class="column align ghost-button" href="https://www.wwe.com/superstars/john-cena" target="_blank">WWE</a>
+    <a id="tribute-link" class="column align ghost-button" href="https://open.spotify.com/artist/0CV4DAO1wV3ikZGYIkMtmh" target="_blank">Spotify</a>
     </div>
     <script>
     </script>
+    </div>
   </body>
 </html>
